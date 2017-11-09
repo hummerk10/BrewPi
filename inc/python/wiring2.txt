@@ -1,0 +1,6 @@
+Pump 1: = GPIO 20 0 = on
+Pump 2: = GPIO 21 0 = on
+
+HLT Element = GPIO 16 1 = on
+
+

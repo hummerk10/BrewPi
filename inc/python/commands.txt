@@ -1,0 +1,31 @@
+# coding: utf-8
+
+# 1 = yes 0 = no
+run=1
+
+#Step
+#	1:Heat HLT to provided temp
+#	2: Mash in ( hit button to signal move)
+#	3: Mash ( timmer), Heat HTL back to temp 
+#	4:  recirculate, ( HTL Element controlled by Mash temp)
+#	5. stop Recirculate, heat HLT to Mash out
+#	6.  Mash out! 
+step=1
+
+# Hot Liquor Tank Element 1 = on 0 = off
+liqel=1
+
+#recirculate mash to HLT to maintain temp
+recir=1
+
+# manual element
+liqelman=1
+
+# hot liquor tank to mash pump 
+liqmashpump=1
+
+#mash to boil pot pump
+mashboilpump=1
+
+timer=1
+

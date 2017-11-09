@@ -1,0 +1,25 @@
+# coding: utf-8
+
+Brew Pi Outline  V1.0
+
+init:
+
+	screen, GPIO, HLT Temp, Mash Temp, Flow 1 (HLT to Mash), Flow 2 ( Mash to Boil), Timer
+
+Pull values from MYSQL:
+	Mash In Temp, Mash in Vol, Mash Time, Mash out Temp, Total Mash Runnigs ( to boil) 
+	
+Step
+	1:Heat HLT to provided temp
+	
+	2: Mash in ( hit button to signal move)
+	
+	3: Mash ( timmer), Heat HTL back to temp 
+	
+	4:  recirculate, ( HTL Element controlled by Mash temp)
+	
+	5. stop Recirculate, heat HLT to Mash out
+	
+	6.  Mash out! 
+		
+	
