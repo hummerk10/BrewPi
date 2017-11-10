@@ -1,5 +1,5 @@
 <?php
-include ('inc/include.php');
+//include ('inc/include.php');
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ include ('inc/include.php');
   	<?php
   	include './inc/site/header.php';//header
 	// if not logged in
-	if (isset($_SESSION['username']))
+	//if (isset($_SESSION['username']))
 	{	include './inc/site/menu.php'; // Menu
 	}
 	include ('inc/site/' .$page. '.php'); // main
