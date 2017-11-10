@@ -32,11 +32,10 @@
   	<div class="container-fluid">
   	<?php
   	include './inc/site/header.php';//header
-	// if not logged in
-	//if (isset($_SESSION['username']))
-	{	include './inc/site/menu.php'; // Menu
-	}
-	include ('inc/site/' .$page. '.php'); // main
+
+
+	
+	include ('inc/site/home.php'); // main
 	include './inc/site/footer.php'; // footer
 	
 	?>
