@@ -15,7 +15,7 @@ $err	= false;
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	$clean	= clean_array($_POST, $db);
 
-	
+	/** 
 
 switch ($_GET['page']) {
 	default:
@@ -41,7 +41,7 @@ switch ($_GET['page']) {
 		$page	= 'History';
 		break;				
 }
-
+**/
 
 if (isset($_GET['Recipe']))
 {

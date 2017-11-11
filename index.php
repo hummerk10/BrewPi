@@ -1,5 +1,5 @@
 <?php
-//include ('inc/include.php');
+include ('inc/include.php');
 ?>
 
 <!DOCTYPE html>

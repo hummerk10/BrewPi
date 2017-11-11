@@ -4,16 +4,16 @@ class mysql {
 	private $connection;
 
         function __construct ($mysql) {
-                $this->connection = mysql_connect ($mysql['host'],$mysql['user'],$mysql['pass']);
-                mysql_select_db($mysql['db']);
+                $this->connection = mysqli_connect ($mysql['host'],$mysql['user'],$mysql['pass'],$mysql['db']);
+                mysqli_select_db($this->connection,$mysql['db']);
         }
 
 	function clean ($text) {
-                return mysql_real_escape_string($text);
+                return mysqli_real_escape_string($text);
         }
 
 	function error () {
-                return mysql_error();
+                return mysqli_error();
         }
 
 	function g ($sql) {
@@ -29,14 +29,14 @@ class mysql {
 	}
 
 	function num ($query) {
-                return mysql_num_rows($query);
+                return mysqli_num_rows($query);
         }
 	function q ($sql) {
                 return $this->query($sql);
         }
 
 	function query ($sql) {
-                return mysql_query($sql, $this->connection);
+                return mysqli_query( $this->connection,$sql);
         }
 
 	function r ($query) {
@@ -47,14 +47,14 @@ class mysql {
                 $results = array();
                 $i = 0;
 
-                while ($result = mysql_fetch_assoc($query))
+                while ($result = mysqli_fetch_assoc($query))
                         $results[$i++] = $result;
 
                 return $results;
         }
 
 	function close () {
-                mysql_close($this->connection);
+                mysqli_close($this->connection);
         }
 
 }
