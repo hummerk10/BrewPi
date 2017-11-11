@@ -1,10 +1,10 @@
 <?php
 
 $mysql = array (
-	'host'	=> 'tld-brewing-controller.cagl1o1xteok.us-east-1.rds.amazonaws.com',
-	'user'	=> 'sec_user',
-	'pass'	=> 'ye5hmt2QzqugZa94wqb7',
-	'db'	=> 'TDLBrewingContoller'
+	'host'	=> 'localhost',
+	'user'	=> 'root',
+	'pass'	=> 'mjwin101',
+	'db'	=> 'Brewing'
 );
 
 $tbl_name="User"; // Table name
